@@ -1,0 +1,5 @@
+html{font-size:22px;font-family:sans-serif}
+main{max-width:960px;width:100%;margin:0 auto;padding:1rem}
+label{display:block;padding:.4em 1em;cursor:pointer}label:hover{background-color:#ffedcc}
+p{border:1px solid #ffdf33;border-radius:.2em;padding:1em}
+.one .one,.two .two,.three .three,.four .four,.five .five{background-color:#ffdb99}

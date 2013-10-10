@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <title>AngularJS - Picker</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body ng-app>
+    <main>
+        <div class="options_wrapper {{selected}}" ng-click="$event.preventDefault()">
+            <label class="one" ng-click="selected='one'">One</label>
+            <label class="two" ng-click="selected='two'">Two</label>
+            <label class="three" ng-click="selected='three'">Three</label>
+            <label class="four" ng-click="selected='four'">Four</label>
+            <label class="five" ng-click="selected='five'">Five</label>
+        </div>
+
+        <!-- ng-show will show an element if the value in the quotes is truthful,
+             while ng-hide does the opposite. Because the selected variable is not set
+             initially, this will cause the first paragraph to be visible. -->
+        
+        <p ng-show="selected">You selected {{selected}}</p>
+        <p ng-hide="selected">Choose a number option</p>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+</body>
+</html>
