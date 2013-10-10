@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <title>AngularJS - Inline Editor</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body ng-app>
+    <main ng-controller="EditorController" ng-click="hideEditor()">
+        <button ng-click="toggleEditor($event)">Edit</button>
+        <div>
+            <input type="text" ng-model="some_text" ng-click="$event.stopPropagation()" ng-show="show_editor" />
+            <p ng-hide="show_editor">{{some_text}}</p>
+        </div>
+        
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/inlineEditor.js"></script>
+</body>
+</html>

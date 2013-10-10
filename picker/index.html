@@ -17,11 +17,6 @@
             <label class="four" ng-click="selected='four'">Four</label>
             <label class="five" ng-click="selected='five'">Five</label>
         </div>
-
-        <!-- ng-show will show an element if the value in the quotes is truthful,
-             while ng-hide does the opposite. Because the selected variable is not set
-             initially, this will cause the first paragraph to be visible. -->
-        
         <p ng-show="selected">You selected {{selected}}</p>
         <p ng-hide="selected">Choose a number option</p>
     </main>
