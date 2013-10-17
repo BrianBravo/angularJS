@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <title>AngularJS - Multiselect</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/multiSelect.js"></script>
+    <div ng-app ng-controller="multiSelectController">
+
+        <h1>Options</h1>
+
+        <ul>
+            <li ng-repeat="option in options" ng-click="toggleActive(option)" ng-class="{on:option.active}">
+                {{option.name}} - {{option.value}}
+            </li>
+        </ul>
+
+        <section>
+            Total Value: <span>{{total()}}</span>
+        </section>
+
+    </div>
+</body>
+</html>
